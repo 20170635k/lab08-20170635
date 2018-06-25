@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.cabecera{
+	background-color: rgb(114,115,159);
+	width: 100%;
+	height: 5vh;
+	padding: 2%;
+	
+}
+.cabecera a{
+	text-decoration: none;
+	color: white;
+}
+.title{
+	width: 7%;
+	
+	display: inline-block;
+	color: white;
+	
+	text-align: center;
+	margin:1%;
+}
+.menuAdmin{
+	float: right;
+	width: 7%;
+	height:96%;
+	display: inline-block;
+	color: white;
+	font-size:1.5em;
+	text-align: center;
+}
+.cabecera a:hover{
+	color:rgb(115,171,191);
+}
+#tocado a{
+	color:rgb(115,171,191);
+}

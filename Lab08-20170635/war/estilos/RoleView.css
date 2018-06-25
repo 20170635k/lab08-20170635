@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.vista{
+	
+	border-radius: 6px ;
+	background-color: rgb(114,115,159);
+	color:white;
+	width:50%;
+	margin: 5em 22.5%;
+}
+.vista tr td{
+	padding:1% 5%;
+}
+.atras{
+	text-decoration: none;
+	background-color:rgb(114,115,159);
+	color:white;
+	width:6%;
+	padding:1% 2%;
+	margin:2em 45%;
+}
+.atras:hover{
+	margin:2em 44%;
+	padding:1% 3%;
+}

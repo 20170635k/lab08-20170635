@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+.line1 , .line{
+	background-color: rgb(114,115,159);
+	color:white;
+}
+.line0{
+	color: rgb(114,115,159);
+}
+.line0 a{
+	color: rgb(114,115,159);
+}
+tr td a{
+	text-decoration: none;
+	color: white;
+}
+tr td{
+	padding:1% 1%;
+	border:rgb(114,115,159) 2px solid;
+	margin:0px;
+}
+table{
+	width:75%;
+}
+tr td a:hover{
+	color:rgb(115,171,191);
+}
