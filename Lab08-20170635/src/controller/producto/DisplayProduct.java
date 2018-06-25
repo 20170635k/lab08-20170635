@@ -1,4 +1,4 @@
-package controller.access;
+package controller.producto;
 
 import java.io.IOException;
 import java.util.List;
@@ -13,22 +13,24 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.appengine.api.users.UserServiceFactory;
 
-import model.PMF;
 import model.AccesoUsuario;
-import model.Access;
+import model.PMF;
+import model.Product;
 
-public class DisplayAccess extends HttpServlet{
+public class DisplayProduct extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException,ServletException {
+		
 		
 		if(AccesoUsuario.dameAcceso(req.getServletPath(),UserServiceFactory.getUserService().getCurrentUser(), 
 				  PMF.get().getPersistenceManager(), getServletContext(),req, resp)){
 			PersistenceManager pm = PMF.get().getPersistenceManager();
-			String query= "select from "+Access.class.getName()+" where status ==true";
-			List<Access> accesos = (List<Access>) pm.newQuery(query).execute();
-			req.setAttribute("accesos",accesos);
+			String query= "select from "+Product.class.getName()+" where status ==true";
+			List<Product> productos = (List<Product>) pm.newQuery(query).execute();
+			req.setAttribute("productos",productos);
 			// forward the request to the jsp
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/JSPFiles/JSPAccess/AccessDisplay.jsp");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/JSPFiles/JSPProduct/ProductDisplay.jsp");
 			dispatcher.forward(req, resp);
 		}
+		
 	}
 }

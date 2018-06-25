@@ -31,7 +31,7 @@ Account usuarioGoogle = (Account)request.getAttribute("userGoogle");
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert title here</title>
+	<title>User Edit</title>
 	
 <!--  STYLES -->
 	<link rel="stylesheet" type="text/css" href="../../../estilos/MenuStyle.css">
@@ -57,6 +57,7 @@ Account usuarioGoogle = (Account)request.getAttribute("userGoogle");
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
+    			<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
     </div>
  	<h2 class="titulo">Edit Role</h2>
 	<a href="/UserDisplay" class="atras">Back</a>

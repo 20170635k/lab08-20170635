@@ -29,7 +29,7 @@ if(usuarioCorreo!=null){
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert title here</title>
+	<title>User create</title>
 	<!--  STYLES -->
 	<link rel="stylesheet" type="text/css" href="../../../estilos/MenuStyle.css">
 	<link rel="stylesheet" type="text/css" href="../../../estilos/Crear.css">
@@ -54,6 +54,7 @@ if(usuarioCorreo!=null){
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
+    			<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
     </div>
     
     

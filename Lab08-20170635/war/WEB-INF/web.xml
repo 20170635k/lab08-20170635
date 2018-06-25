@@ -73,6 +73,65 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>RoleRead</servlet-name>
 		<url-pattern>/RoleRead</url-pattern>
 	</servlet-mapping>
+<!--################################################################################-->
+<!--#################....................PRODUCTO............###########################-->
+<!--################################################################################-->
+<!--.................  ROLE CREATE ................. -->
+	<servlet>
+		<servlet-name>ProductCreate</servlet-name>
+		<servlet-class>controller.producto.CreateProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductCreate</servlet-name>
+		<url-pattern>/ProductCreate</url-pattern>
+	</servlet-mapping>
+	
+<!--................. ROLE DISPLAY .....................-->
+	<servlet>
+		<servlet-name>ProductDisplay</servlet-name>
+		<servlet-class>controller.producto.DisplayProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductDisplay</servlet-name>
+		<url-pattern>/ProductDisplay</url-pattern>
+	</servlet-mapping>
+<!--.................ROLE CREATE REDIRECT ................-->
+	<servlet>
+		<servlet-name>ProductCreateRedirect</servlet-name>
+		<servlet-class>controller.producto.CreateProductRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductCreateRedirect</servlet-name>
+		<url-pattern>/ProductCreateRedirect</url-pattern>
+	</servlet-mapping>
+<!--.................  ROLE DELETE................. -->
+	<servlet>
+		<servlet-name>ProductDelete</servlet-name>
+		<servlet-class>controller.producto.DeleteProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductDelete</servlet-name>
+		<url-pattern>/ProductDelete</url-pattern>
+	</servlet-mapping>
+<!--.................  ROLE UPDATE ................. -->
+	<servlet>
+		<servlet-name>ProductUpdate</servlet-name>
+		<servlet-class>controller.producto.UpdateProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductUpdate</servlet-name>
+		<url-pattern>/ProductUpdate</url-pattern>
+	</servlet-mapping>
+
+<!--.................  ROLE READ ................. -->
+	<servlet>
+		<servlet-name>ProductRead</servlet-name>
+		<servlet-class>controller.producto.ReadProduct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductRead</servlet-name>
+		<url-pattern>/ProductRead</url-pattern>
+	</servlet-mapping>
 
 <!--################################################################################-->
 <!--#################.................RESOURCE.................#########################-->

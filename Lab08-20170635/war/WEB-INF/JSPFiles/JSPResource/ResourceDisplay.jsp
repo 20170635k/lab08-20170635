@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Resource Display</title>
 <link rel="stylesheet" type="text/css" href="../../../estilos/MenuStyle.css">
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -22,6 +22,7 @@
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
+    			<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
     </div>
 
 	<center>

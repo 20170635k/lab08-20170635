@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert title here</title>
+	<title>Access Edit</title>
 
 	<link rel="stylesheet" type="text/css" href="../../../estilos/MenuStyle.css">
 	<link rel="stylesheet" type="text/css" href="../../../estilos/Crear.css">
@@ -29,6 +29,7 @@
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
+    		<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
     </div>
  <h2 class="titulo">Edit Access</h2>
 	<a href="/AccessDisplay" class="atras">Back</a>

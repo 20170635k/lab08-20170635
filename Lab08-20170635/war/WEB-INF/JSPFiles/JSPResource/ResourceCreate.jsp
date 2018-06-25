@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert title here</title>
+	<title>Resource Create</title>
 	<script src="../../../scripts/NoVacio.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="../../../estilos/MenuStyle.css">
@@ -18,11 +18,12 @@
     		<h1 class="title"> System</h1>
     			<div class="menuAdmin"><a href="/RoleDisplay">Role</a></div>
     			<div class="menuAdmin"><a href="/UserDisplay">User</a></div>
-    			<div class="menuAdmin" id="tocado"><a href="/ResourseDisplay">Resource</a></div>
+    			<div class="menuAdmin" id="tocado"><a href="/ResourceDisplay">Resource</a></div>
     			<div class="menuAdmin"><a href="/AccessDisplay">Access</a></div>
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
+    			<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
     </div>
     <h2 class="titulo">Add Resource</h2>
 	<a href="/ResourceDisplay" class="atras">Back</a>

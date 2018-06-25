@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="model.Access" %>
+<%@ page import="model.Product" %>
 <%@ page import="java.util.List" %>
-<% List<Access> accesos= (List<Access>)request.getAttribute("accesos"); %>
+<% List<Product> productos= (List<Product>)request.getAttribute("productos"); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Access Display</title>
+<title>Product Display</title>
 <link rel="stylesheet" type="text/css" href="../../../estilos/MenuStyle.css">
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
@@ -18,29 +18,30 @@
     			<div class="menuAdmin"><a href="/RoleDisplay">Role</a></div>
     			<div class="menuAdmin"><a href="/UserDisplay">User</a></div>
     			<div class="menuAdmin"><a href="/ResourceDisplay">Resource</a></div>
-    			<div class="menuAdmin" id="tocado"><a href="/AccessDisplay">Access</a></div>
+    			<div class="menuAdmin"><a href="/AccessDisplay">Access</a></div>
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
-    			<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
+    			<div class="menuAdmin" id="tocado"><a href="/ProductDisplay">Product</a></div>
     </div>
 
 	<center>
 		<table>
-		<tr class="line"><td>Rol</td><td>Recurso</td><td>ID</td><td>Status</td><td>Fecha de creación</td></tr>
-		<%for(int i=0;i<accesos.size();i++){
-			Access acceso= accesos.get(i);
+		<tr class="line"><td>Nombre</td><td>precio</td><td>ID</td><td>Status</td><td>stok</td></tr>
+		<%for(int i=0;i<productos.size();i++){
+			Product producto= productos.get(i);
 			int ind=i%2;
 			%>
 				<tr class="line<%=ind%>">
-					<td><%=acceso.getIdRole()%>:<%=acceso.getRol()%></td>
-					<td><%=acceso.getIdUrl()%>:<%=acceso.getUrl()%></td>
-					<td><%=acceso.getId()%></td>
-					<td><%=acceso.getStatus()%></td>
-					<td><%=acceso.getFecha()%></td>
-					<td><a href="/AccessRead?idAcceso=<%=acceso.getId()%>">View</a></td>
-					<td><a href="/AccessCreateRedirect?mode=update&idAcceso=<%=acceso.getId()%>">Update</a></td>
-					<td><a href="/AccessDelete?idAcceso=<%=acceso.getId()%>">Delete</a></td>
+					<td><%=producto.getNombre()%></td>
+					<td><%=producto.getPrecio()%></td>
+					<td><%=producto.getId()%></td>
+					<td><%=producto.getStatus()%></td>
+					<td><%=producto.getStok()%></td>
+					
+					<td><a href="/ProductRead?idProducto=<%=producto.getId()%>">View</a></td>
+					<td><a href="/ProductCreateRedirect?mode=update&idProducto=<%=producto.getId()%>">Update</a></td>
+					<td><a href="/ProductDelete?idProducto=<%=producto.getId()%>">Delete</a></td>
 				</tr>
 			<% 
 		}
@@ -48,7 +49,7 @@
 		</table>
 		
 		<br>
-		<a href="/AccessCreateRedirect?mode=create">Crear Nuevo Acceso</a>
+		<a href="/ProductCreateRedirect?mode=create">Crear Nuevo Producto</a>
 	</center>
 	
 </body>

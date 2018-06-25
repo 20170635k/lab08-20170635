@@ -20,6 +20,8 @@
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
+    			<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
+    			
     	</div>
   </body>
 </html>

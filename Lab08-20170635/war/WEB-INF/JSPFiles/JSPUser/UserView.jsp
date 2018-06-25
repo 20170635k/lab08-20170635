@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>User view</title>
 <!-- LOS ENLACES A LOS ESTILOS -->
 <link rel="stylesheet" type="text/css" href="../../../estilos/RoleView.css">
 <link rel="stylesheet" type="text/css" href="../../../estilos/MenuStyle.css">
@@ -23,6 +23,7 @@
     			<div class="menuAdmin"><a href="/UserLogin">Login</a></div>
     			<div class="menuAdmin"><a href="/UserLogout">Logout</a></div>
     			<div class="menuAdmin"><a href="/User/Register">Register</a></div>
+    			<div class="menuAdmin"><a href="/ProductDisplay">Product</a></div>
     </div>
 	
 	<a href="/UserDisplay" class="atras">Back</a>
